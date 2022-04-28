@@ -35,10 +35,8 @@ function WatchVideo() {
               <div className="watch-video-content">
                 <div className="left-section">
                   <VideoPlayer className="video-player" video={videoInfo} />
-
                   <Comments comments={videoInfo.comments} />
                 </div>
-
                 <div className="related-videos">
                   <RelatedVideos id={videoInfo.videoId} />
                 </div>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import CommentLine from "./CommentLine";
 function Comments({ comments }) {
   const [videoComments, setVideoComments] = useState();
   const [showComments, setShowComments] = useState(true);
@@ -8,6 +8,11 @@ function Comments({ comments }) {
     posted_by: "current_user",
     text: "",
   });
+
+  useEffect(() => {
+    if (!comments) return;
+    setVideoComments([...comments]);
+  }, [comments]);
 
 
   return (
@@ -26,6 +31,9 @@ function Comments({ comments }) {
                Add Comment
               </div>
               <h4>Comments</h4>
+              {videoComments.map((comment, idx) => {
+                return <CommentLine comment={comment} key={idx} />;
+              })}
             </div>
           )}
         </div>
