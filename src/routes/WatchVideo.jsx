@@ -1,11 +1,24 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import {getVideoId, getVideoInfo} from '../utils'
 function WatchVideo() {
 
   const [fetchingData, setFetchingData] = useState(true);
   const [fetchError, setFetchError] = useState(false);
   const [videoInfo, setVideoInfo] = useState({});
 
+  useEffect(() => {
+    let videoId = getVideoId(window.location.href);
+    if (!videoId) setFetchError(true);
+    else {
+      getVideoInfo(videoId)
+        .then((info) => {
+          setVideoInfo(info);
+        })
+        .catch((err) => setFetchError(true));
+    }
+    setFetchingData(false);
+  }, []);
   return (
     <div>
     {!fetchingData ? (

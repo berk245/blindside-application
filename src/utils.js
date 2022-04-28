@@ -22,7 +22,6 @@ const getVideoId = (url) => {
 };
 
 const getVideoInfo = async (id) => {
-  console.log(id);
   await sleep(1000);
   return dataSet[0];
 };
