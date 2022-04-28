@@ -1,18 +1,26 @@
 import React from "react";
-import "./PageHeader.css";
 import logo from "../../static/logo.svg";
-
+import "./PageHeader.css";
 function PageHeader({ signedIn = true }) {
+  const signOut = () => {
+    try {
+      localStorage.clear();
+    } catch {
+      console.log("Error signing out");
+    } finally {
+      window.location.reload();
+    }
+  };
   return (
     <div className="page-header-container">
       <img src={logo} className="header-logo" alt="Blindside Logo" />
       {signedIn && (
-        <button className="button">
+        <button className="button" onClick={signOut}>
           Sign Out
         </button>
       )}
     </div>
-  );W
+  );
 }
 
 export default PageHeader;

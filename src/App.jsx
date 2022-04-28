@@ -4,20 +4,27 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Overview from "./routes/Overview";
 import WatchVideo from "./routes/WatchVideo";
 import PageHeader from "./components/PageHeader/PageHeader";
-import { withAuthenticator } from "@aws-amplify/ui-react";
-
+import Authenticator from "./components/AmplifyAuthComponents/Authenticator";
 function App() {
-  return (
+  return localStorage.current_user ? (
     <div className="App">
       <PageHeader></PageHeader>
       <Router>
         <Routes>
-          <Route path="/" element={<Overview />}></Route>
+          <Route
+            path="/"
+            element={<Overview user={localStorage.current_user} />}
+          ></Route>
           <Route path="/watch/*" element={<WatchVideo />}></Route>
         </Routes>
       </Router>
     </div>
+  ) : (
+    <>
+      <PageHeader signedIn={false}></PageHeader>
+      <Authenticator></Authenticator>
+    </>
   );
 }
 
-export default withAuthenticator(App);
+export default App;

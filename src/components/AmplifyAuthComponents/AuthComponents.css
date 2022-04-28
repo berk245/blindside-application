@@ -1,0 +1,59 @@
+.authentication-form-container,
+.signup-main-container {
+  margin: auto;
+  width: 50vw;
+  padding: 5rem;
+border: 1px solid silver;
+border-radius: 5px;
+margin-top:5rem;
+left: 25vw;
+}
+
+
+
+.country-code {
+  width: 20%;
+}
+.auth-input {
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  color: black;
+  display: block;
+  width: 100%;
+}
+.auth-error-text {
+  padding: 1rem 0;
+
+  color: crimson;
+}
+.success-text {
+  padding: 1rem 0;
+  font-weight: 600;
+}
+.link-text {
+  color: #fbc337;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  font-weight: 600;
+}
+.link-text:hover {
+  text-decoration: underline;
+}
+.forgot-psw-text {
+  color: #fbc337;
+  cursor: pointer;
+  margin: 0.5rem 0;
+  font-weight: 600;
+
+}
+.forgot-psw-text:hover {
+  text-decoration: underline;
+}
+.submit-section {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.signup-form
