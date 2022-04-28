@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import VideoPlayer from "../components/VideoPlayer/VideoPlayer";
 import RelatedVideos from "../components/RelatedVideos/RelatedVideos";
-
+import Comments from "../components/Comments/Comments";
 import { getVideoId, getVideoInfo } from "../utils";
 function WatchVideo() {
   const [fetchingData, setFetchingData] = useState(true);
@@ -36,7 +36,7 @@ function WatchVideo() {
                 <div className="left-section">
                   <VideoPlayer className="video-player" video={videoInfo} />
 
-                  <div className="">Comments</div>
+                  <Comments comments={videoInfo.comments} />
                 </div>
 
                 <div className="related-videos">
