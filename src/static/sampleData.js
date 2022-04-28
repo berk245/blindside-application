@@ -29,12 +29,12 @@ const createDataSet = () => {
           text: "Some generic comment text",
         },
         {
-          posted_at: "2Hours ago",
+          posted_at: "2 Hours ago",
           posted_by: "blindside User",
           text: "Some generic comment text",
         },
         {
-          posted_at: "3Hours ago",
+          posted_at: "3 Hours ago",
           posted_by: "blindside User",
           text: "Some generic comment text",
         },
@@ -47,6 +47,7 @@ const createDataSet = () => {
   console.log(result);
 };
 
+//Created using above function
 const dataSet = [
   {
     videoId: 1,
@@ -77,12 +78,12 @@ const dataSet = [
         text: "Some generic comment text",
       },
       {
-        posted_at: "2Hours ago",
+        posted_at: "2 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
       {
-        posted_at: "3Hours ago",
+        posted_at: "3 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
@@ -117,12 +118,12 @@ const dataSet = [
         text: "Some generic comment text",
       },
       {
-        posted_at: "2Hours ago",
+        posted_at: "2 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
       {
-        posted_at: "3Hours ago",
+        posted_at: "3 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
@@ -157,12 +158,12 @@ const dataSet = [
         text: "Some generic comment text",
       },
       {
-        posted_at: "2Hours ago",
+        posted_at: "2 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
       {
-        posted_at: "3Hours ago",
+        posted_at: "3 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
@@ -198,12 +199,12 @@ const dataSet = [
         text: "Some generic comment text",
       },
       {
-        posted_at: "2Hours ago",
+        posted_at: "2 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
       {
-        posted_at: "3Hours ago",
+        posted_at: "3 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
@@ -239,12 +240,12 @@ const dataSet = [
         text: "Some generic comment text",
       },
       {
-        posted_at: "2Hours ago",
+        posted_at: "2 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
       {
-        posted_at: "3Hours ago",
+        posted_at: "3 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
@@ -280,12 +281,12 @@ const dataSet = [
         text: "Some generic comment text",
       },
       {
-        posted_at: "2Hours ago",
+        posted_at: "2 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
       {
-        posted_at: "3Hours ago",
+        posted_at: "3 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
@@ -321,12 +322,12 @@ const dataSet = [
         text: "Some generic comment text",
       },
       {
-        posted_at: "2Hours ago",
+        posted_at: "2 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
       {
-        posted_at: "3Hours ago",
+        posted_at: "3 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
@@ -362,12 +363,12 @@ const dataSet = [
         text: "Some generic comment text",
       },
       {
-        posted_at: "2Hours ago",
+        posted_at: "2 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
       {
-        posted_at: "3Hours ago",
+        posted_at: "3 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
@@ -403,12 +404,12 @@ const dataSet = [
         text: "Some generic comment text",
       },
       {
-        posted_at: "2Hours ago",
+        posted_at: "2 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
       {
-        posted_at: "3Hours ago",
+        posted_at: "3 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
@@ -444,12 +445,12 @@ const dataSet = [
         text: "Some generic comment text",
       },
       {
-        posted_at: "2Hours ago",
+        posted_at: "2 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
       {
-        posted_at: "3Hours ago",
+        posted_at: "3 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
@@ -485,12 +486,12 @@ const dataSet = [
         text: "Some generic comment text",
       },
       {
-        posted_at: "2Hours ago",
+        posted_at: "2 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
       {
-        posted_at: "3Hours ago",
+        posted_at: "3 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
@@ -526,12 +527,12 @@ const dataSet = [
         text: "Some generic comment text",
       },
       {
-        posted_at: "2Hours ago",
+        posted_at: "2 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
       {
-        posted_at: "3Hours ago",
+        posted_at: "3 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
@@ -567,12 +568,12 @@ const dataSet = [
         text: "Some generic comment text",
       },
       {
-        posted_at: "2Hours ago",
+        posted_at: "2 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
       {
-        posted_at: "3Hours ago",
+        posted_at: "3 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
@@ -608,12 +609,12 @@ const dataSet = [
         text: "Some generic comment text",
       },
       {
-        posted_at: "2Hours ago",
+        posted_at: "2 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
       {
-        posted_at: "3Hours ago",
+        posted_at: "3 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
@@ -649,12 +650,12 @@ const dataSet = [
         text: "Some generic comment text",
       },
       {
-        posted_at: "2Hours ago",
+        posted_at: "2 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
       {
-        posted_at: "3Hours ago",
+        posted_at: "3 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
@@ -690,12 +691,12 @@ const dataSet = [
         text: "Some generic comment text",
       },
       {
-        posted_at: "2Hours ago",
+        posted_at: "2 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
       {
-        posted_at: "3Hours ago",
+        posted_at: "3 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
@@ -731,12 +732,12 @@ const dataSet = [
         text: "Some generic comment text",
       },
       {
-        posted_at: "2Hours ago",
+        posted_at: "2 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
       {
-        posted_at: "3Hours ago",
+        posted_at: "3 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
@@ -772,12 +773,12 @@ const dataSet = [
         text: "Some generic comment text",
       },
       {
-        posted_at: "2Hours ago",
+        posted_at: "2 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
       {
-        posted_at: "3Hours ago",
+        posted_at: "3 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
@@ -813,12 +814,12 @@ const dataSet = [
         text: "Some generic comment text",
       },
       {
-        posted_at: "2Hours ago",
+        posted_at: "2 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
       {
-        posted_at: "3Hours ago",
+        posted_at: "3 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
@@ -854,12 +855,12 @@ const dataSet = [
         text: "Some generic comment text",
       },
       {
-        posted_at: "2Hours ago",
+        posted_at: "2 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
       {
-        posted_at: "3Hours ago",
+        posted_at: "3 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
@@ -895,12 +896,12 @@ const dataSet = [
         text: "Some generic comment text",
       },
       {
-        posted_at: "2Hours ago",
+        posted_at: "2 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
       {
-        posted_at: "3Hours ago",
+        posted_at: "3 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
@@ -936,12 +937,12 @@ const dataSet = [
         text: "Some generic comment text",
       },
       {
-        posted_at: "2Hours ago",
+        posted_at: "2 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
       {
-        posted_at: "3Hours ago",
+        posted_at: "3 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
@@ -977,12 +978,12 @@ const dataSet = [
         text: "Some generic comment text",
       },
       {
-        posted_at: "2Hours ago",
+        posted_at: "2 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
       {
-        posted_at: "3Hours ago",
+        posted_at: "3 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
@@ -1018,12 +1019,12 @@ const dataSet = [
         text: "Some generic comment text",
       },
       {
-        posted_at: "2Hours ago",
+        posted_at: "2 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
       {
-        posted_at: "3Hours ago",
+        posted_at: "3 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
@@ -1059,12 +1060,12 @@ const dataSet = [
         text: "Some generic comment text",
       },
       {
-        posted_at: "2Hours ago",
+        posted_at: "2 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
       {
-        posted_at: "3Hours ago",
+        posted_at: "3 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
@@ -1100,12 +1101,12 @@ const dataSet = [
         text: "Some generic comment text",
       },
       {
-        posted_at: "2Hours ago",
+        posted_at: "2 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
       {
-        posted_at: "3Hours ago",
+        posted_at: "3 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
@@ -1141,12 +1142,12 @@ const dataSet = [
         text: "Some generic comment text",
       },
       {
-        posted_at: "2Hours ago",
+        posted_at: "2 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
       {
-        posted_at: "3Hours ago",
+        posted_at: "3 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
@@ -1182,12 +1183,12 @@ const dataSet = [
         text: "Some generic comment text",
       },
       {
-        posted_at: "2Hours ago",
+        posted_at: "2 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
       {
-        posted_at: "3Hours ago",
+        posted_at: "3 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
@@ -1223,12 +1224,12 @@ const dataSet = [
         text: "Some generic comment text",
       },
       {
-        posted_at: "2Hours ago",
+        posted_at: "2 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
       {
-        posted_at: "3Hours ago",
+        posted_at: "3 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
@@ -1264,12 +1265,12 @@ const dataSet = [
         text: "Some generic comment text",
       },
       {
-        posted_at: "2Hours ago",
+        posted_at: "2 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
       {
-        posted_at: "3Hours ago",
+        posted_at: "3 Hours ago",
         posted_by: "blindside User",
         text: "Some generic comment text",
       },
