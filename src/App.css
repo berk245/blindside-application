@@ -6,3 +6,16 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
+.watch-video-main-container{
+  margin: auto;
+  margin-top: 1rem;
+  width: 95vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.watch-video-content{
+  display: flex;
+  justify-content: space-between;
+}
