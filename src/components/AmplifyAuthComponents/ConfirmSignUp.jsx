@@ -19,7 +19,8 @@ export default function ConfirmSignUp({ user, setFormState }) {
     setFormFields(obj);
   };
 
-  const onSignIn = async () => {
+  const onSignIn = async (e) => {
+    e.preventDefault();
     let formData = { ...formFields };
     try {
       let confirmedUser = await Auth.confirmSignUp(
@@ -86,7 +87,7 @@ export default function ConfirmSignUp({ user, setFormState }) {
                 Go back to home page
               </p>
             </div>
-            <button className="button" onClick={onSignIn}>
+            <button className="button" onClick={(e) => onSignIn(e)}>
               Submit
             </button>
           </div>

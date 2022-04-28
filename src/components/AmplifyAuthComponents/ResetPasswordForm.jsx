@@ -14,10 +14,6 @@ export default function ResetPasswordForm({ setFormState }) {
   const [verificationCodeSent, setVerificationCodeSent] = useState(false);
 
   const onChange = (e) => {
-    if (e.key === "Enter") {
-      e.preventDefault();
-      requestVerificationCode();
-    }
     setFormError("");
     const { id, value } = e.target;
     let obj = { ...formFields };
@@ -25,20 +21,23 @@ export default function ResetPasswordForm({ setFormState }) {
     setFormFields(obj);
   };
 
-  const requestVerificationCode = async () => {
+  const requestVerificationCode = async (e) => {
+    e.preventDefault();
     let formData = { ...formFields };
     try {
       await Auth.forgotPassword(formData.username);
       setSuccess("A verification code is sent to your email");
       setVerificationCodeSent(true);
     } catch (err) {
+      console.log(formData.username);
       setVerificationCodeSent(false);
       console.log("Error while submitting username");
       setFormError(err.message);
     }
   };
 
-  const onSubmit = async () => {
+  const onSubmit = async (e) => {
+    e.preventDefault(e);
     let formData = { ...formFields };
     try {
       await Auth.forgotPasswordSubmit(
@@ -70,7 +69,7 @@ export default function ResetPasswordForm({ setFormState }) {
                 className="auth-input"
                 placeholder="Username"
                 id="username"
-                onKeyDown={(e) => {
+                onChange={(e) => {
                   onChange(e);
                 }}
               />
@@ -114,12 +113,20 @@ export default function ResetPasswordForm({ setFormState }) {
               </span>
             </div>
             {!verificationCodeSent && (
-              <button className="button" onClick={requestVerificationCode}>
+              <button
+                className="button"
+                onClick={(e) => requestVerificationCode(e)}
+              >
                 Submit
               </button>
             )}
             {verificationCodeSent && (
-              <button type="primary" size="large" onClick={onSubmit}>
+              <button
+                className="button"
+                type="primary"
+                size="large"
+                onClick={(e) => onSubmit(e)}
+              >
                 Reset Password
               </button>
             )}
