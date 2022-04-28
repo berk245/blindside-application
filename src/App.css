@@ -1,11 +1,19 @@
 .overview-container{
-  width: 80vw;
+  width: 85vw;
   margin: auto;
-  margin-top: 5rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.videos-container{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-top: 1rem;
 }
+
+
 .watch-video-main-container{
   margin: auto;
   margin-top: 1rem;

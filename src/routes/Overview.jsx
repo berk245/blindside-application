@@ -16,21 +16,26 @@ function Overview() {
       })
       .catch((err) => {
         setFetchError(true);
-        setFetchingData(false)
+        setFetchingData(false);
       });
   }, []);
 
   return (
     <div>
       {fetchingData ? (
-        <h1 style={{textAlign: 'center', padding:'5rem 0'}}>Loading</h1>
+        <h1 style={{ textAlign: "center", padding: "5rem 0" }}>Loading</h1>
       ) : (
         <>
           {!fetchError ? (
             <div className="overview-container">
-              {userVideos.map((video, idx) => {
-                 return <LargeVideoBox video={video} key={idx} />;
-              })}
+              <h3>
+                Welcome {localStorage.current_user}. Here are your videos.
+              </h3>
+              <div className="videos-container">
+                {userVideos.map((video, idx) => {
+                  return <LargeVideoBox video={video} key={idx} />;
+                })}
+              </div>
             </div>
           ) : (
             <p>
@@ -40,7 +45,7 @@ function Overview() {
         </>
       )}
     </div>
-  )
+  );
 }
 
-export default Overview
+export default Overview;
