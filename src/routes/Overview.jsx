@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { getUserVideos } from "../utils";
+import LargeVideoBox from "../components/LargeVideoBox/LargeVideoBox";
 
 function Overview() {
   const [fetchingData, setFetchingData] = useState(true);
@@ -28,7 +29,7 @@ function Overview() {
           {!fetchError ? (
             <div className="overview-container">
               {userVideos.map((video, idx) => {
-                return <p>{video.videoTitle}</p>;
+                 return <LargeVideoBox video={video} key={idx} />;
               })}
             </div>
           ) : (
