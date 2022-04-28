@@ -3,8 +3,8 @@ import './App.css'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Overview from "./routes/Overview";
 import WatchVideo from "./routes/WatchVideo";
+
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className="App">
