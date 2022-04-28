@@ -26,4 +26,9 @@ const getVideoInfo = async (id) => {
   return dataSet[0];
 };
 
-export { getUserVideos, getVideoId, getVideoInfo };
+const getRelatedVideoInfo = async(id) => {
+    await sleep(3000)
+    return dataSet.slice(0,15)
+  }
+
+export { getUserVideos, getVideoId, getVideoInfo, getRelatedVideoInfo };
