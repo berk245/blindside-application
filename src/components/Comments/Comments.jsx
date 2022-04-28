@@ -15,7 +15,20 @@ function Comments({ comments }) {
     setVideoComments([...comments]);
   }, [comments]);
 
-
+  const handleChange = (e) => {
+    let obj = { ...newComment, text: e.target.value };
+    setNewComment(obj);
+  };
+  const postComment = () => {
+    if (!newComment.text) return;
+    let arr = [newComment, ...videoComments];
+    setVideoComments([...arr]);
+    setNewComment({ ...newComment, text: "" });
+  };
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter") postComment();
+    return;
+  };
   return (
     <div className="comments-container">
       <button
@@ -29,7 +42,23 @@ function Comments({ comments }) {
           {showComments && (
             <div className="">
               <div className="add-comment-section">
-               Add Comment
+              <input
+                  onChange={(e) => handleChange(e)}
+                  onKeyDown={(e) => handleKeyPress(e)}
+                  onEnter
+                  type="text"
+                  name="comment"
+                  value={newComment.text}
+                  className="comment-input"
+                  placeholder="Add a comment..."
+                />
+                <button
+                  className="button"
+                  disabled={!newComment.text}
+                  onClick={postComment}
+                >
+                  Post
+                </button>
               </div>
               <h4>Comments</h4>
               {videoComments.map((comment, idx) => {
