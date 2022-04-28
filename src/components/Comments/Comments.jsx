@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import './Comments.css'
 import CommentLine from "./CommentLine";
 function Comments({ comments }) {
   const [videoComments, setVideoComments] = useState();
