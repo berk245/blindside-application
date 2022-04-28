@@ -20,6 +20,17 @@
   justify-content: space-between;
 }
 
+.video-player-info-section{
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0.5rem 0 0.5rem;
+  font-size: 1rem;
+}
+.video-player{
+  width: 70vw !important;
+  height: 70vh !important;
+}
+
 .button{
   padding: 0.75rem 2rem;
   background: white;
@@ -34,4 +45,21 @@
 .button:hover{
   background-color: #fbc337c8;
 
+}
+
+@media screen and (max-width: 1000px) {
+
+  .related-videos{
+    width: 80%;
+    margin: auto;
+  }
+  .video-player{
+    width: 95vw !important;
+    height: 70vh !important;
+  }
+  
+  .watch-video-content{
+    flex-direction: column;
+  }
+  
 }

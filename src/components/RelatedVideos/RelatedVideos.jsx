@@ -34,6 +34,7 @@ function RelatedVideos({ id }) {
         <>
           {!fetchError ? (
             <div className="related-videos-container">
+               <h3>Related Videos</h3>
                  {relatedVideoInfo.map((video, idx) => {
                 return <SmallVideoBox video={video} key={idx}></SmallVideoBox>;
               })}
