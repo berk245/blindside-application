@@ -1,8 +1,44 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
+import { getUserVideos } from "../utils";
 
 function Overview() {
+  const [fetchingData, setFetchingData] = useState(true);
+  const [fetchError, setFetchError] = useState(false);
+  const [userVideos, setUserVideos] = useState([]);
+
+  useEffect(() => {
+    setFetchingData(true);
+    getUserVideos()
+      .then((res) => {
+        setUserVideos(res);
+        setFetchingData(false);
+      })
+      .catch((err) => {
+        setFetchError(true);
+        setFetchingData(false)
+      });
+  }, []);
+
   return (
-    <div>Overview</div>
+    <div>
+      {fetchingData ? (
+        <h1 style={{textAlign: 'center', padding:'5rem 0'}}>Loading</h1>
+      ) : (
+        <>
+          {!fetchError ? (
+            <div className="overview-container">
+              {userVideos.map((video, idx) => {
+                return <p>{video.videoTitle}</p>;
+              })}
+            </div>
+          ) : (
+            <p>
+              An error occured while accessing data. Please refresh the page.
+            </p>
+          )}
+        </>
+      )}
+    </div>
   )
 }
 
