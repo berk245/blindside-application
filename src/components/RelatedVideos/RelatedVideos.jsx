@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { getRelatedVideoInfo } from "../../utils";
+import SmallVideoBox from "../SmallVideobox/SmallVideoBox";
 
 
 function RelatedVideos({ id }) {
@@ -20,6 +21,11 @@ function RelatedVideos({ id }) {
         setfetchingData(false);
       });
   }, [id]);
+
+  const getInfo = async () => {
+    let result = await getRelatedVideoInfo(id);
+    return result;
+  };
   return (
     <div className="rel-vid-main">
       {fetchingData ? (
@@ -28,7 +34,9 @@ function RelatedVideos({ id }) {
         <>
           {!fetchError ? (
             <div className="related-videos-container">
-                <h3>Related Videos</h3>
+                 {relatedVideoInfo.map((video, idx) => {
+                return <SmallVideoBox video={video} key={idx}></SmallVideoBox>;
+              })}
             </div>
           ) : (
             <p>
