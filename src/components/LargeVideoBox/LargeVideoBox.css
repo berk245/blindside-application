@@ -29,3 +29,10 @@
 .video-title{
     font-size: 1.1rem;
 }
+
+@media screen and (max-width: 1000px) {
+    .first-line{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

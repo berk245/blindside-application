@@ -7,7 +7,7 @@ const sleep = (ms) => {
 };
 
 const getUserVideos = async () => {
-  await sleep(3000);
+  await sleep(2000);
   return dataSet;
 };
 
@@ -27,7 +27,7 @@ const getVideoInfo = async (id) => {
 };
 
 const getRelatedVideoInfo = async(id) => {
-    await sleep(3000)
+    await sleep(2000)
     return dataSet.slice(0,15)
   }
 

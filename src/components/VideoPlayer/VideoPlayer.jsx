@@ -11,6 +11,7 @@ function VideoPlayer({video}) {
     <span style={{fontWeight: 600}}>{videoTitle}</span>
     <span>{postedAt}</span>
     </div>
+    <hr />
     </>
  
   )

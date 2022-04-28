@@ -29,7 +29,7 @@ function RelatedVideos({ id }) {
   return (
     <div className="rel-vid-main">
       {fetchingData ? (
-        <p>Loading</p>
+        <p>Loading related videos</p>
       ) : (
         <>
           {!fetchError ? (
